@@ -160,7 +160,7 @@
 				TargetAttributes = {
 					B163C5BC1EEFD1BF001960BA = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = GGHP6SBZUF;
+						DevelopmentTeam = 8FUTL3FE9F;
 						ProvisioningStyle = Automatic;
 					};
 					B163C5D51EEFD1BF001960BA = {
@@ -351,7 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GGHP6SBZUF;
+				DEVELOPMENT_TEAM = 8FUTL3FE9F;
 				INFOPLIST_FILE = GitDmoe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weixin.GitDmoe;
@@ -363,7 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GGHP6SBZUF;
+				DEVELOPMENT_TEAM = 8FUTL3FE9F;
 				INFOPLIST_FILE = GitDmoe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = weixin.GitDmoe;

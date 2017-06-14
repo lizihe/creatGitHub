@@ -18,8 +18,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     NSLog(@"aa");
-    // Override point for customization after application launch.
     return YES;
+    
+    
 }
 
 
