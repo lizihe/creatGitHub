@@ -1,14 +1,13 @@
 //
-//  HomeViewController.h
+//  PushViewController.h
 //  GitDmoe
 //
-//  Created by luo on 17/6/18.
+//  Created by luo on 2017/6/21.
 //  Copyright © 2017年 VCredit. All rights reserved.
 //
 
 #import "MyBaseViewController.h"
 
-@interface HomeViewController : MyBaseViewController
-
+@interface PushViewController : MyBaseViewController
 
 @end

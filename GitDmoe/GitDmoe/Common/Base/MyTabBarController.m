@@ -11,7 +11,7 @@
 #import "HomeViewController.h"
 #import "TestViewController.h"
 #import "MyViewController.h"
-
+#import "MyTabBar.h"
 @interface MyTabBarController ()
 
 @end
@@ -63,6 +63,9 @@ static  MyTabBarController *tabbar = nil;
     NSArray *vcArr = @[NSStringFromClass([HomeViewController class]),NSStringFromClass([TestViewController class]),NSStringFromClass([MyViewController class])];
     self.viewControllers = [self tabbarVC:vcArr titleArr:titleArr normalArr:normalImages selectedArr:selectedImage];
     self.selectedIndex = 0;
+    
+    [self setValue:[[MyTabBar alloc]init] forKey:@"tabBar"];
+    
 }
 
 -(NSArray *)tabbarVC:(NSArray *)arrVC titleArr:(NSArray *)titleArr  normalArr:(NSArray *)normalArr selectedArr:(NSArray *)selectedArr
@@ -89,10 +92,23 @@ static  MyTabBarController *tabbar = nil;
 
 
 
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.childViewControllers.count > 0)
+    {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+}
+
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
+
+
 
 /*
 #pragma mark - Navigation

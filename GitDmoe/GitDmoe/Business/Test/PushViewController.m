@@ -1,34 +1,28 @@
 //
-//  HomeViewController.m
+//  PushViewController.m
 //  GitDmoe
 //
-//  Created by luo on 17/6/18.
+//  Created by luo on 2017/6/21.
 //  Copyright © 2017年 VCredit. All rights reserved.
 //
 
-#import "HomeViewController.h"
 #import "PushViewController.h"
 
-@interface HomeViewController ()
+@interface PushViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation PushViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [self.navigationController pushViewController:[PushViewController new] animated:YES];
 }
 
 /*

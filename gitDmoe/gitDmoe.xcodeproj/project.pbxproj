@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B105E7E41EF90AAA0056C038 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B105E7E31EF90AAA0056C038 /* MyTabBar.m */; };
+		B105E7F31EF91D220056C038 /* UIView+myExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B105E7F21EF91D220056C038 /* UIView+myExtension.m */; };
+		B105E7F61EFA71EA0056C038 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B105E7F51EFA71EA0056C038 /* PushViewController.m */; };
 		B163C5C21EEFD1BF001960BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B163C5C11EEFD1BF001960BA /* main.m */; };
 		B163C5C51EEFD1BF001960BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B163C5C41EEFD1BF001960BA /* AppDelegate.m */; };
 		B163C5C81EEFD1BF001960BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B163C5C71EEFD1BF001960BA /* ViewController.m */; };
@@ -39,6 +42,13 @@
 /* Begin PBXFileReference section */
 		413FB877414089491CA33462 /* libPods-GitDmoe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitDmoe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F2B6EC0579F9DFC5D13E97 /* Pods-GitDmoe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitDmoe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitDmoe/Pods-GitDmoe.debug.xcconfig"; sourceTree = "<group>"; };
+		B105E7E21EF90AAA0056C038 /* MyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBar.h; sourceTree = "<group>"; };
+		B105E7E31EF90AAA0056C038 /* MyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBar.m; sourceTree = "<group>"; };
+		B105E7F11EF91D220056C038 /* UIView+myExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+myExtension.h"; sourceTree = "<group>"; };
+		B105E7F21EF91D220056C038 /* UIView+myExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+myExtension.m"; sourceTree = "<group>"; };
+		B105E7F41EFA71EA0056C038 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		B105E7F51EFA71EA0056C038 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		B105E7FB1EFA76E20056C038 /* MyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMacros.h; sourceTree = "<group>"; };
 		B163C5BD1EEFD1BF001960BA /* GitDmoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitDmoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B163C5C11EEFD1BF001960BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B163C5C31EEFD1BF001960BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B105E7E61EF912C00056C038 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B105E7F11EF91D220056C038 /* UIView+myExtension.h */,
+				B105E7F21EF91D220056C038 /* UIView+myExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		B163C5B41EEFD1BF001960BA = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +169,7 @@
 		B163C5E51EF3815E001960BA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B105E7E61EF912C00056C038 /* Category */,
 				B1FEC72A1EF7C707000A6922 /* Configuration */,
 				B163C5E61EF3815E001960BA /* Base */,
 			);
@@ -165,6 +185,8 @@
 				B163C6251EF57DF9001960BA /* MyBaseViewController.m */,
 				B163C6461EF6CA11001960BA /* BaseNavigationController.h */,
 				B163C6471EF6CA11001960BA /* BaseNavigationController.m */,
+				B105E7E21EF90AAA0056C038 /* MyTabBar.h */,
+				B105E7E31EF90AAA0056C038 /* MyTabBar.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -204,6 +226,8 @@
 				B163C63D1EF6B3C2001960BA /* TestViewController.h */,
 				B163C63E1EF6B3C2001960BA /* TestViewController.m */,
 				B163C63F1EF6B3C2001960BA /* TestViewController.xib */,
+				B105E7F41EFA71EA0056C038 /* PushViewController.h */,
+				B105E7F51EFA71EA0056C038 /* PushViewController.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -223,6 +247,7 @@
 				B1FEC72B1EF7C723000A6922 /* PrefixHeader.pch */,
 				B1FEC7331EF7D142000A6922 /* MyConst.h */,
 				B1FEC7341EF7D142000A6922 /* MyConst.m */,
+				B105E7FB1EFA76E20056C038 /* MyMacros.h */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -296,8 +321,8 @@
 				TargetAttributes = {
 					B163C5BC1EEFD1BF001960BA = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 8FUTL3FE9F;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 427SNUF6Q8;
+						ProvisioningStyle = Manual;
 					};
 					B163C5D51EEFD1BF001960BA = {
 						CreatedOnToolsVersion = 8.0;
@@ -407,10 +432,13 @@
 				B163C5C51EEFD1BF001960BA /* AppDelegate.m in Sources */,
 				B163C6481EF6CA11001960BA /* BaseNavigationController.m in Sources */,
 				B163C6451EF6C991001960BA /* IntroViewController.m in Sources */,
+				B105E7E41EF90AAA0056C038 /* MyTabBar.m in Sources */,
 				B163C6391EF6B3AC001960BA /* HomeViewController.m in Sources */,
 				B163C6401EF6B3C2001960BA /* TestViewController.m in Sources */,
 				B163C6261EF57DF9001960BA /* MyBaseViewController.m in Sources */,
 				B163C5C21EEFD1BF001960BA /* main.m in Sources */,
+				B105E7F61EFA71EA0056C038 /* PushViewController.m in Sources */,
+				B105E7F31EF91D220056C038 /* UIView+myExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,14 +574,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 8FUTL3FE9F;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 427SNUF6Q8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/luo/Desktop/creatGithub/GitDmoe/GitDmoe/Common/Configuration/PrefixHeader.pch;
 				INFOPLIST_FILE = GitDmoe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = weixin.GitDmoe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcredit.qwallet.ent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "59d4172b-ffe1-4bb3-a32a-fe5c4023910c";
+				PROVISIONING_PROFILE_SPECIFIER = QWalletAdHocProfile;
 			};
 			name = Debug;
 		};
@@ -563,14 +594,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 8FUTL3FE9F;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = /Users/luo/Desktop/creatGithub/GitDmoe/GitDmoe/Common/Configuration/PrefixHeader.pch;
 				INFOPLIST_FILE = GitDmoe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = weixin.GitDmoe;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vcredit.qwallet.ent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
