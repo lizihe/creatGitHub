@@ -10,6 +10,9 @@
 		B105E7E41EF90AAA0056C038 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B105E7E31EF90AAA0056C038 /* MyTabBar.m */; };
 		B105E7F31EF91D220056C038 /* UIView+myExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B105E7F21EF91D220056C038 /* UIView+myExtension.m */; };
 		B105E7F61EFA71EA0056C038 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B105E7F51EFA71EA0056C038 /* PushViewController.m */; };
+		B105E8011EFB59050056C038 /* MyHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B105E8001EFB59050056C038 /* MyHttpClient.m */; };
+		B105E80A1EFB6FCA0056C038 /* MyRequest.h in Sources */ = {isa = PBXBuildFile; fileRef = B105E8091EFB6D080056C038 /* MyRequest.h */; };
+		B105E80D1EFBC0F00056C038 /* MyHttpClient+FailureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B105E80C1EFBC0F00056C038 /* MyHttpClient+FailureHandler.m */; };
 		B163C5C21EEFD1BF001960BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B163C5C11EEFD1BF001960BA /* main.m */; };
 		B163C5C51EEFD1BF001960BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B163C5C41EEFD1BF001960BA /* AppDelegate.m */; };
 		B163C5C81EEFD1BF001960BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B163C5C71EEFD1BF001960BA /* ViewController.m */; };
@@ -49,6 +52,11 @@
 		B105E7F41EFA71EA0056C038 /* PushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
 		B105E7F51EFA71EA0056C038 /* PushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
 		B105E7FB1EFA76E20056C038 /* MyMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMacros.h; sourceTree = "<group>"; };
+		B105E7FF1EFB59050056C038 /* MyHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHttpClient.h; sourceTree = "<group>"; };
+		B105E8001EFB59050056C038 /* MyHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHttpClient.m; sourceTree = "<group>"; };
+		B105E8091EFB6D080056C038 /* MyRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRequest.h; sourceTree = "<group>"; };
+		B105E80B1EFBC0F00056C038 /* MyHttpClient+FailureHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyHttpClient+FailureHandler.h"; sourceTree = "<group>"; };
+		B105E80C1EFBC0F00056C038 /* MyHttpClient+FailureHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MyHttpClient+FailureHandler.m"; sourceTree = "<group>"; };
 		B163C5BD1EEFD1BF001960BA /* GitDmoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitDmoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B163C5C11EEFD1BF001960BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B163C5C31EEFD1BF001960BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +119,17 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		B105E7FE1EFB58BD0056C038 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				B105E7FF1EFB59050056C038 /* MyHttpClient.h */,
+				B105E8001EFB59050056C038 /* MyHttpClient.m */,
+				B105E80B1EFBC0F00056C038 /* MyHttpClient+FailureHandler.h */,
+				B105E80C1EFBC0F00056C038 /* MyHttpClient+FailureHandler.m */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
 		B163C5B41EEFD1BF001960BA = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +188,7 @@
 		B163C5E51EF3815E001960BA /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B105E7FE1EFB58BD0056C038 /* NetWorking */,
 				B105E7E61EF912C00056C038 /* Category */,
 				B1FEC72A1EF7C707000A6922 /* Configuration */,
 				B163C5E61EF3815E001960BA /* Base */,
@@ -248,6 +268,7 @@
 				B1FEC7331EF7D142000A6922 /* MyConst.h */,
 				B1FEC7341EF7D142000A6922 /* MyConst.m */,
 				B105E7FB1EFA76E20056C038 /* MyMacros.h */,
+				B105E8091EFB6D080056C038 /* MyRequest.h */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -425,9 +446,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B105E80A1EFB6FCA0056C038 /* MyRequest.h in Sources */,
 				B1FEC7351EF7D142000A6922 /* MyConst.m in Sources */,
 				B163C5C81EEFD1BF001960BA /* ViewController.m in Sources */,
 				B163C5EC1EF3A8C8001960BA /* MyTabBarController.m in Sources */,
+				B105E80D1EFBC0F00056C038 /* MyHttpClient+FailureHandler.m in Sources */,
 				B163C63C1EF6B3BA001960BA /* MyViewController.m in Sources */,
 				B163C5C51EEFD1BF001960BA /* AppDelegate.m in Sources */,
 				B163C6481EF6CA11001960BA /* BaseNavigationController.m in Sources */,
@@ -435,6 +458,7 @@
 				B105E7E41EF90AAA0056C038 /* MyTabBar.m in Sources */,
 				B163C6391EF6B3AC001960BA /* HomeViewController.m in Sources */,
 				B163C6401EF6B3C2001960BA /* TestViewController.m in Sources */,
+				B105E8011EFB59050056C038 /* MyHttpClient.m in Sources */,
 				B163C6261EF57DF9001960BA /* MyBaseViewController.m in Sources */,
 				B163C5C21EEFD1BF001960BA /* main.m in Sources */,
 				B105E7F61EFA71EA0056C038 /* PushViewController.m in Sources */,
